@@ -1,1 +1,10 @@
-
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost # Set the hostname explicitly
+  client:
+    enabled: true # Make sure Eureka client is enabled
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
